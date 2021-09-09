@@ -6,6 +6,8 @@ using OpenCVForUnity;
 
 namespace OpenCVForUnity
 {
+    using OpenCVForUnity.CoreModule;
+
     public class MeshDrawer : MonoBehaviour
     {
         [SerializeField] bool showMesh = true;

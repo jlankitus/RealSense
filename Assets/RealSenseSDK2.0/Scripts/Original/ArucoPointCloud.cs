@@ -12,6 +12,9 @@ using OpenCVForUnity.CoreModule;
 
 namespace OpenCVForUnityExample
 {
+    using OpenCVForUnity.Calib3dModule;
+    using OpenCVForUnity.UnityUtils;
+
     public class ArucoPointCloud : MonoBehaviour
     {
 
@@ -365,7 +368,7 @@ namespace OpenCVForUnityExample
             pointCloudVisualizer.SetMatrix("_trs", trs);
 
             pointCloudVisualizer.SetPass(0);
-            Graphics.DrawProcedural(MeshTopology.Points, dataLength);
+            Graphics.DrawProceduralNow(MeshTopology.Points, dataLength);
             
         }
 

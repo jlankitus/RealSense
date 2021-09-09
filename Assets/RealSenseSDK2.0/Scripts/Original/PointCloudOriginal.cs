@@ -121,7 +121,7 @@ public class PointCloudOriginal : MonoBehaviour {
         pointCloudVisualizer.SetMatrix("_trs", m);
         
         pointCloudVisualizer.SetPass(0);
-        Graphics.DrawProcedural(MeshTopology.Points, dataLength);
+        Graphics.DrawProceduralNow(MeshTopology.Points, dataLength);
     }
     
     

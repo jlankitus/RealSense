@@ -7,6 +7,8 @@ using System.Threading;
 using UnityEngine;
 
 using OpenCVForUnity;
+using OpenCVForUnity.ArucoModule;
+using OpenCVForUnity.CoreModule;
 
 namespace OpenCVForUnityExample
 {

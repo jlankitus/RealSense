@@ -59,6 +59,8 @@ namespace OpenCVForUnity
                     Vector3 center = mesh.bounds.center + (norm * markerLength / 2);
                     Quaternion q = Quaternion.FromToRotation(Vector3.up, norm);
 					Instantiate(coordObj, center, q, this.gameObject.transform);
+
+                    Debug.LogError("box center: " + center.ToString());
                 }
             }
         }

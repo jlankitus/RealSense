@@ -29,6 +29,7 @@ public class RealSenseDeviceInspectorOriginal : MonoBehaviour {
         foreach (var s in profile.Device.Sensors)
         {
             sensors.Add(s.Info[CameraInfo.Name], s);
+            Debug.LogError(s.Info[CameraInfo.SerialNumber]);
         }
         streaming = true;
     }
